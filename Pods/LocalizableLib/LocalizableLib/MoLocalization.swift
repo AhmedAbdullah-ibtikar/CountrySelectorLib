@@ -4,10 +4,9 @@
 
 import UIKit
 
-struct Constants {
-    static let appleLanguage = "AppleLanguages"
-    static let defaultLanguage = "en"
-    static let arabicLanguage = "ar"
+ struct Constants {
+     static let appleLanguage = "AppleLanguages"
+     static let defaultLanguage = "en"
 }
 
 public class MoLocalization: NSObject {
@@ -20,7 +19,7 @@ public class MoLocalization: NSObject {
         rootviewcontroller.rootViewController = stry.instantiateViewController(withIdentifier: startViewController)
     }
     
-    public class func setCurrentLang(lang: String, isRightToLeft: Bool = false, forceReset: Bool = false , startStoryBorad: String? = nil, startViewController: String? = nil) {
+    public class func set(lang: String, isRightToLeft: Bool = false, forceReset: Bool = false , startStoryBorad: String? = nil, startViewController: String? = nil) {
         MoLocalization.isRightToLeftLanguage = isRightToLeft
         let userdef = UserDefaults.standard
         userdef.set([lang], forKey: Constants.appleLanguage)
@@ -61,7 +60,7 @@ public class MoLocalization: NSObject {
 
 extension String {
     
-    func localized() -> String {
+    public func localized() -> String {
         let path = Bundle.main.path(forResource: MoLocalization.currentAppleLanguage(), ofType: "lproj")
         let bundle = Bundle(path: path!)
         return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")

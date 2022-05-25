@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3CF52CB283E570A004F6585 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CF52CA283E570A004F6585 /* CoreTelephony.framework */; };
+		E3CF533D283E5E71004F6585 /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5323283E5E71004F6585 /* NBAsYouTypeFormatter.m */; };
+		E3CF533E283E5E71004F6585 /* NBPhoneMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5324283E5E71004F6585 /* NBPhoneMetaData.m */; };
+		E3CF533F283E5E71004F6585 /* NBPhoneNumberUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5325283E5E71004F6585 /* NBPhoneNumberUtil.m */; };
+		E3CF5340283E5E71004F6585 /* NSArray+NBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5326283E5E71004F6585 /* NSArray+NBAdditions.m */; };
+		E3CF5341283E5E71004F6585 /* NBRegExMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF532C283E5E71004F6585 /* NBRegExMatcher.m */; };
+		E3CF5342283E5E71004F6585 /* NBRegularExpressionCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF532D283E5E71004F6585 /* NBRegularExpressionCache.m */; };
+		E3CF5343283E5E71004F6585 /* GeneratePhoneNumberHeader.sh in Resources */ = {isa = PBXBuildFile; fileRef = E3CF532E283E5E71004F6585 /* GeneratePhoneNumberHeader.sh */; };
+		E3CF5344283E5E71004F6585 /* NBNumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF532F283E5E71004F6585 /* NBNumberFormat.m */; };
+		E3CF5345283E5E71004F6585 /* NBPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5332283E5E71004F6585 /* NBPhoneNumber.m */; };
+		E3CF5346283E5E71004F6585 /* NBMetadataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5334283E5E71004F6585 /* NBMetadataHelper.m */; };
+		E3CF5347283E5E71004F6585 /* NBPhoneNumberMetadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3CF5337283E5E71004F6585 /* NBPhoneNumberMetadata.plist */; };
+		E3CF5348283E5E71004F6585 /* NBPhoneNumberDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF5339283E5E71004F6585 /* NBPhoneNumberDesc.m */; };
+		E3CF534A283E5E71004F6585 /* NBPhoneNumberDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CF533C283E5E71004F6585 /* NBPhoneNumberDefines.m */; };
 		E512DD3621FB2E8E00EF27A1 /* tg.png in Resources */ = {isa = PBXBuildFile; fileRef = E512DC2121FB2E8D00EF27A1 /* tg.png */; };
 		E512DD3721FB2E8E00EF27A1 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = E512DC2221FB2E8D00EF27A1 /* me.png */; };
 		E512DD3821FB2E8E00EF27A1 /* la.png in Resources */ = {isa = PBXBuildFile; fileRef = E512DC2321FB2E8D00EF27A1 /* la.png */; };
@@ -311,6 +325,34 @@
 /* Begin PBXFileReference section */
 		466712C63158F060A6EF7432 /* Pods-CountrySelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountrySelector.release.xcconfig"; path = "Target Support Files/Pods-CountrySelector/Pods-CountrySelector.release.xcconfig"; sourceTree = "<group>"; };
 		484FB4AAFE66560875DEF12A /* Pods-CountrySelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountrySelector.debug.xcconfig"; path = "Target Support Files/Pods-CountrySelector/Pods-CountrySelector.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CF52CA283E570A004F6585 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E3CF52CC283E5928004F6585 /* CountrySelector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountrySelector-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3CF5322283E5E71004F6585 /* NBPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumber.h; sourceTree = "<group>"; };
+		E3CF5323283E5E71004F6585 /* NBAsYouTypeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBAsYouTypeFormatter.m; sourceTree = "<group>"; };
+		E3CF5324283E5E71004F6585 /* NBPhoneMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneMetaData.m; sourceTree = "<group>"; };
+		E3CF5325283E5E71004F6585 /* NBPhoneNumberUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumberUtil.m; sourceTree = "<group>"; };
+		E3CF5326283E5E71004F6585 /* NSArray+NBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NBAdditions.m"; sourceTree = "<group>"; };
+		E3CF5327283E5E71004F6585 /* NBMetadataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMetadataHelper.h; sourceTree = "<group>"; };
+		E3CF5328283E5E71004F6585 /* NBPhoneNumberDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumberDefines.h; sourceTree = "<group>"; };
+		E3CF532A283E5E71004F6585 /* NBRegExMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBRegExMatcher.h; sourceTree = "<group>"; };
+		E3CF532B283E5E71004F6585 /* NBRegularExpressionCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBRegularExpressionCache.h; sourceTree = "<group>"; };
+		E3CF532C283E5E71004F6585 /* NBRegExMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBRegExMatcher.m; sourceTree = "<group>"; };
+		E3CF532D283E5E71004F6585 /* NBRegularExpressionCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBRegularExpressionCache.m; sourceTree = "<group>"; };
+		E3CF532E283E5E71004F6585 /* GeneratePhoneNumberHeader.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = GeneratePhoneNumberHeader.sh; sourceTree = "<group>"; };
+		E3CF532F283E5E71004F6585 /* NBNumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBNumberFormat.m; sourceTree = "<group>"; };
+		E3CF5330283E5E71004F6585 /* NBPhoneNumberDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumberDesc.h; sourceTree = "<group>"; };
+		E3CF5331283E5E71004F6585 /* NBAsYouTypeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBAsYouTypeFormatter.h; sourceTree = "<group>"; };
+		E3CF5332283E5E71004F6585 /* NBPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumber.m; sourceTree = "<group>"; };
+		E3CF5333283E5E71004F6585 /* NBPhoneMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneMetaData.h; sourceTree = "<group>"; };
+		E3CF5334283E5E71004F6585 /* NBMetadataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMetadataHelper.m; sourceTree = "<group>"; };
+		E3CF5335283E5E71004F6585 /* NSArray+NBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NBAdditions.h"; sourceTree = "<group>"; };
+		E3CF5336283E5E71004F6585 /* NBPhoneNumberUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumberUtil.h; sourceTree = "<group>"; };
+		E3CF5337283E5E71004F6585 /* NBPhoneNumberMetadata.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NBPhoneNumberMetadata.plist; sourceTree = "<group>"; };
+		E3CF5338283E5E71004F6585 /* NBGeneratedPhoneNumberMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBGeneratedPhoneNumberMetaData.h; sourceTree = "<group>"; };
+		E3CF5339283E5E71004F6585 /* NBPhoneNumberDesc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumberDesc.m; sourceTree = "<group>"; };
+		E3CF533A283E5E71004F6585 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3CF533B283E5E71004F6585 /* NBNumberFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBNumberFormat.h; sourceTree = "<group>"; };
+		E3CF533C283E5E71004F6585 /* NBPhoneNumberDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumberDefines.m; sourceTree = "<group>"; };
 		E4F22E6B672F4EAFA2D883C0 /* Pods_CountrySelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountrySelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E512DC2121FB2E8D00EF27A1 /* tg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tg.png; sourceTree = "<group>"; };
 		E512DC2221FB2E8D00EF27A1 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
@@ -606,6 +648,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CF52CB283E570A004F6585 /* CoreTelephony.framework in Frameworks */,
 				FCA86F4F75DBA8193B048B84 /* Pods_CountrySelector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,6 +673,7 @@
 		1E5649317F4FF30B90061D9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3CF52CA283E570A004F6585 /* CoreTelephony.framework */,
 				E4F22E6B672F4EAFA2D883C0 /* Pods_CountrySelector.framework */,
 			);
 			name = Frameworks;
@@ -642,6 +686,55 @@
 				466712C63158F060A6EF7432 /* Pods-CountrySelector.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3CF52C5283E561E004F6585 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF5321283E5E71004F6585 /* libPhoneNumber */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		E3CF5321283E5E71004F6585 /* libPhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF5322283E5E71004F6585 /* NBPhoneNumber.h */,
+				E3CF5323283E5E71004F6585 /* NBAsYouTypeFormatter.m */,
+				E3CF5324283E5E71004F6585 /* NBPhoneMetaData.m */,
+				E3CF5325283E5E71004F6585 /* NBPhoneNumberUtil.m */,
+				E3CF5326283E5E71004F6585 /* NSArray+NBAdditions.m */,
+				E3CF5327283E5E71004F6585 /* NBMetadataHelper.h */,
+				E3CF5328283E5E71004F6585 /* NBPhoneNumberDefines.h */,
+				E3CF5329283E5E71004F6585 /* Internal */,
+				E3CF532E283E5E71004F6585 /* GeneratePhoneNumberHeader.sh */,
+				E3CF532F283E5E71004F6585 /* NBNumberFormat.m */,
+				E3CF5330283E5E71004F6585 /* NBPhoneNumberDesc.h */,
+				E3CF5331283E5E71004F6585 /* NBAsYouTypeFormatter.h */,
+				E3CF5332283E5E71004F6585 /* NBPhoneNumber.m */,
+				E3CF5333283E5E71004F6585 /* NBPhoneMetaData.h */,
+				E3CF5334283E5E71004F6585 /* NBMetadataHelper.m */,
+				E3CF5335283E5E71004F6585 /* NSArray+NBAdditions.h */,
+				E3CF5336283E5E71004F6585 /* NBPhoneNumberUtil.h */,
+				E3CF5337283E5E71004F6585 /* NBPhoneNumberMetadata.plist */,
+				E3CF5338283E5E71004F6585 /* NBGeneratedPhoneNumberMetaData.h */,
+				E3CF5339283E5E71004F6585 /* NBPhoneNumberDesc.m */,
+				E3CF533A283E5E71004F6585 /* Info.plist */,
+				E3CF533B283E5E71004F6585 /* NBNumberFormat.h */,
+				E3CF533C283E5E71004F6585 /* NBPhoneNumberDefines.m */,
+			);
+			path = libPhoneNumber;
+			sourceTree = "<group>";
+		};
+		E3CF5329283E5E71004F6585 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF532A283E5E71004F6585 /* NBRegExMatcher.h */,
+				E3CF532B283E5E71004F6585 /* NBRegularExpressionCache.h */,
+				E3CF532C283E5E71004F6585 /* NBRegExMatcher.m */,
+				E3CF532D283E5E71004F6585 /* NBRegularExpressionCache.m */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 		E512DC1E21FB2E8D00EF27A1 /* CountrySelectorLib */ = {
@@ -964,10 +1057,12 @@
 		E512DD2E21FB2E8E00EF27A1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E3CF52C5283E561E004F6585 /* Libs */,
 				E512DD2F21FB2E8E00EF27A1 /* ExtensionUINavigationBar.swift */,
 				E512DD3021FB2E8E00EF27A1 /* ExtensionDecodable.swift */,
 				E512DD3121FB2E8E00EF27A1 /* ExtensionUIView.swift */,
 				E512DD3221FB2E8E00EF27A1 /* ExtensionUiViewController.swift */,
+				E3CF52CC283E5928004F6585 /* CountrySelector-Bridging-Header.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1100,7 +1195,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = shaat;
 				TargetAttributes = {
 					E5F0738B21ED40A0008ABC6A = {
@@ -1166,6 +1261,7 @@
 				E512DE2C21FB2E8E00EF27A1 /* bq.png in Resources */,
 				E512DD4821FB2E8E00EF27A1 /* zm.png in Resources */,
 				E512DD4321FB2E8E00EF27A1 /* co.png in Resources */,
+				E3CF5347283E5E71004F6585 /* NBPhoneNumberMetadata.plist in Resources */,
 				E512DD5121FB2E8E00EF27A1 /* cz.png in Resources */,
 				E512DDD621FB2E8E00EF27A1 /* sk.png in Resources */,
 				E512DDE021FB2E8E00EF27A1 /* et.png in Resources */,
@@ -1262,6 +1358,7 @@
 				E512DE1F21FB2E8E00EF27A1 /* bs.png in Resources */,
 				E512DDF821FB2E8E00EF27A1 /* bb.png in Resources */,
 				E512DD8E21FB2E8E00EF27A1 /* re.png in Resources */,
+				E3CF5343283E5E71004F6585 /* GeneratePhoneNumberHeader.sh in Resources */,
 				E512DDC421FB2E8E00EF27A1 /* iq.png in Resources */,
 				E512DD5321FB2E8E00EF27A1 /* cm.png in Resources */,
 				E512DDB521FB2E8E00EF27A1 /* ph.png in Resources */,
@@ -1432,15 +1529,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CountrySelector/Pods-CountrySelector-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LocalizableLib/LocalizableLib.framework",
-				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CountrySelector/Pods-CountrySelector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocalizableLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CountrySelector/Pods-CountrySelector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1474,17 +1568,28 @@
 			files = (
 				E512DE3921FB2E8E00EF27A1 /* CountrySelectorPresenter.swift in Sources */,
 				E512DE4021FB2E8E00EF27A1 /* ExtensionUINavigationBar.swift in Sources */,
+				E3CF534A283E5E71004F6585 /* NBPhoneNumberDefines.m in Sources */,
+				E3CF5348283E5E71004F6585 /* NBPhoneNumberDesc.m in Sources */,
 				E5F0739221ED40A0008ABC6A /* ViewController.swift in Sources */,
 				E512DE4121FB2E8E00EF27A1 /* ExtensionDecodable.swift in Sources */,
+				E3CF5341283E5E71004F6585 /* NBRegExMatcher.m in Sources */,
 				E512DE4221FB2E8E00EF27A1 /* ExtensionUIView.swift in Sources */,
+				E3CF5340283E5E71004F6585 /* NSArray+NBAdditions.m in Sources */,
 				E512DE3E21FB2E8E00EF27A1 /* CounterySelectorSearchViewController.swift in Sources */,
+				E3CF5345283E5E71004F6585 /* NBPhoneNumber.m in Sources */,
+				E3CF533E283E5E71004F6585 /* NBPhoneMetaData.m in Sources */,
 				E512DE4321FB2E8E00EF27A1 /* ExtensionUiViewController.swift in Sources */,
 				E512DE3B21FB2E8E00EF27A1 /* CounterySelectorTableViewCell.swift in Sources */,
+				E3CF5346283E5E71004F6585 /* NBMetadataHelper.m in Sources */,
 				E512DE3D21FB2E8E00EF27A1 /* CounterySelectorSearchBar.swift in Sources */,
 				E512DE3821FB2E8E00EF27A1 /* Country.swift in Sources */,
+				E3CF5344283E5E71004F6585 /* NBNumberFormat.m in Sources */,
+				E3CF533D283E5E71004F6585 /* NBAsYouTypeFormatter.m in Sources */,
 				E512DE4421FB2E8E00EF27A1 /* CounterySelectorDelegate.swift in Sources */,
+				E3CF5342283E5E71004F6585 /* NBRegularExpressionCache.m in Sources */,
 				E512DE4521FB2E8E00EF27A1 /* CounterSelectorView.swift in Sources */,
 				E5F0739021ED40A0008ABC6A /* AppDelegate.swift in Sources */,
+				E3CF533F283E5E71004F6585 /* NBPhoneNumberUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1565,6 +1670,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1626,6 +1732,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1661,15 +1768,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 368YH886R9;
+				DEVELOPMENT_TEAM = 37DEHZMV7W;
 				INFOPLIST_FILE = CountrySelector/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shaat.CountrySelector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CountrySelectorLib/Helpers/CountrySelector-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1681,15 +1789,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 368YH886R9;
+				DEVELOPMENT_TEAM = 37DEHZMV7W;
 				INFOPLIST_FILE = CountrySelector/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shaat.CountrySelector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CountrySelectorLib/Helpers/CountrySelector-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

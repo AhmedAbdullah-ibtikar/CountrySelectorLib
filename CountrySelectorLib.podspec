@@ -14,6 +14,7 @@ DESC
 
   s.ios.deployment_target = '11.4'
   s.source_files = 'CountrySelectorLib/**/*.{xib,swift}'
+  s.source_files = 'CountrySelectorLib/libPhoneNumber/*.{swift,h,m}'
  s.resources = 'CountrySelectorLib/**/*.{xcassets,png}'
 
 end

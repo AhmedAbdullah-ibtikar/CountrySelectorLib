@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import libPhoneNumber_iOS
 
 class CounterySelectorSearchViewController: UIViewController {
     @IBOutlet weak var counteryTableView: UITableView!
@@ -63,42 +62,29 @@ class CounterySelectorSearchViewController: UIViewController {
     }
     
     func setupNavigationAndSearchBar() {
-        if #available(iOS 11.0, *) {
-            let searchController = UISearchController(searchResultsController: nil)
-            let searchBar = searchController.searchBar
-            searchBar.delegate = self
-            searchBar.tintColor = UIColor.gray
-            searchBar.barTintColor = UIColor.gray
-            searchBar.placeholder = searchBarPlaceHolder
-            searchBar.setValue(cancelButtonTitle, forKey:"_cancelButtonText")
-            if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
-                textfield.textColor = UIColor.darkGray
-                if let backgroundview = textfield.subviews.first {
-                    backgroundview.backgroundColor = UIColor.white
-                    backgroundview.layer.cornerRadius = 10;
-                    backgroundview.clipsToBounds = true;
-                }
+    
+        let searchController = UISearchController(searchResultsController: nil)
+        let searchBar = searchController.searchBar
+        searchBar.delegate = self
+        searchBar.tintColor = UIColor.gray
+        searchBar.barTintColor = UIColor.gray
+        searchBar.placeholder = searchBarPlaceHolder
+        searchBar.setValue(cancelButtonTitle, forKey:"cancelButtonText")
+        if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+            textfield.textColor = UIColor.darkGray
+            if let backgroundview = textfield.subviews.first {
+                backgroundview.backgroundColor = UIColor.white
+                backgroundview.layer.cornerRadius = 10;
+                backgroundview.clipsToBounds = true;
             }
-            
-            if let navigationbar = self.navigationController?.navigationBar {
-                navigationbar.barTintColor = UIColor.white
-            }
-            navigationItem.searchController = searchController
-            navigationItem.hidesSearchBarWhenScrolling = false
-            
-        } else {
-            self.searchController = UISearchController(searchResultsController:  nil)
-            let searchBar = searchController.searchBar
-            searchBar.delegate = self
-            searchBar.tintColor = UIColor.gray
-            searchBar.barTintColor = UIColor.gray
-            self.searchController.searchBar.delegate = self
-            self.searchController.hidesNavigationBarDuringPresentation = false
-            self.searchController.dimsBackgroundDuringPresentation = true
-            self.navigationController?.navigationItem.titleView = searchController.searchBar
-            self.definesPresentationContext = true
         }
         
+        if let navigationbar = self.navigationController?.navigationBar {
+            navigationbar.barTintColor = UIColor.white
+        }
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+                    
         let bundle = Bundle(for: CounterySelectorTableViewCell.classForCoder())
         let leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "ic_remove", in: bundle, compatibleWith: nil), style: .done, target: self, action: #selector(CounterySelectorSearchViewController.dismissAction))
         self.navigationItem.leftBarButtonItem = leftBarButtonItem

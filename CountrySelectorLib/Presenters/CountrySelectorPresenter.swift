@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import libPhoneNumber_iOS
 
 class CountrySelectorPresenter: NSObject {
     
-    private lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil()
+    private lazy var phoneUtil = NBPhoneNumberUtil.sharedInstance() ?? NBPhoneNumberUtil()
     var counterySelectorView: CounterySelectorView?
     let bundle = Bundle(for: CounterySelectorTableViewCell.classForCoder())
     

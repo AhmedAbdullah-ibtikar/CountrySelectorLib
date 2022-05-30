@@ -6,6 +6,7 @@
 //  Copyright © 2019 shaat. All rights reserved.
 //
 import UIKit
+import libPhoneNumber_iOS
 
 public enum CountryDataType {
     case  countryRegionCode
@@ -22,7 +23,7 @@ public class CounterySelectorSearchBar: UIView {
     var countries:[Character : [Country]] = [Character : [Country]]()
     var filterCountries:[Character : [Country]] = [Character : [Country]]()
     var filterCountriesKeys = [Character]()
-    lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil()
+    lazy var phoneUtil = NBPhoneNumberUtil.sharedInstance() ?? NBPhoneNumberUtil()
     let counterySelectorPresenter = CountrySelectorPresenter()
     public var countryDataType: CountryDataType = .phoneCode
     

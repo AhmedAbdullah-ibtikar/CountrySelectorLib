@@ -1,16 +1,29 @@
 PODS:
+  - libPhoneNumber-iOS (1.0.4)
   - LocalizableLib (0.1.8)
 
 DEPENDENCIES:
+  - libPhoneNumber-iOS (from `https://github.com/iziz/libPhoneNumber-iOS`, branch `master`)
   - LocalizableLib (~> 0.1.8)
 
 SPEC REPOS:
   trunk:
     - LocalizableLib
 
+EXTERNAL SOURCES:
+  libPhoneNumber-iOS:
+    :branch: master
+    :git: https://github.com/iziz/libPhoneNumber-iOS
+
+CHECKOUT OPTIONS:
+  libPhoneNumber-iOS:
+    :commit: 243e3cb19245fd77492289f2c7360b1560598519
+    :git: https://github.com/iziz/libPhoneNumber-iOS
+
 SPEC CHECKSUMS:
+  libPhoneNumber-iOS: de124f9305ab81328510b08e2f895a8f19ce4854
   LocalizableLib: 3db743889ac8c69a5916be6147b4b9913476819d
 
-PODFILE CHECKSUM: 75586ba95ed6d1d9f96835baaa2d080611a8534b
+PODFILE CHECKSUM: 2604280bb98953b9db3d5b3a9e5b4af26fc562d4
 
 COCOAPODS: 1.11.3

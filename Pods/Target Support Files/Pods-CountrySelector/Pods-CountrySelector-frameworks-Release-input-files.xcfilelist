@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-CountrySelector/Pods-CountrySelector-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/LocalizableLib/LocalizableLib.framework
+${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework

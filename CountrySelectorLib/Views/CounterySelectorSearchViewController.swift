@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import libPhoneNumber_iOS
 
- class CounterySelectorSearchViewController: UIViewController {
+class CounterySelectorSearchViewController: UIViewController {
     @IBOutlet weak var counteryTableView: UITableView!
     var searchController: UISearchController!
     var searchBarPlaceHolder: String = ""
@@ -18,7 +19,7 @@ import UIKit
     var countries:[Character : [Country]] = [Character : [Country]]()
     var filterCountries:[Character : [Country]] = [Character : [Country]]()
     var filterCountriesKeys = [Character]()
-    lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil()
+    lazy var phoneUtil = NBPhoneNumberUtil.sharedInstance() ?? NBPhoneNumberUtil()
     let cellReuseIdentifier = "CounterySelectorTableViewCell"
     let counterySelectorPresenter = CountrySelectorPresenter()
     public var countryDataType: CountryDataType = .phoneCode
@@ -41,7 +42,7 @@ import UIKit
     
     func registerCell() {
         let bundle = Bundle(for: CounterySelectorTableViewCell.classForCoder())
-      counteryTableView.register(UINib(nibName: cellReuseIdentifier, bundle: bundle), forCellReuseIdentifier: cellReuseIdentifier )
+        counteryTableView.register(UINib(nibName: cellReuseIdentifier, bundle: bundle), forCellReuseIdentifier: cellReuseIdentifier )
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,7 +51,7 @@ import UIKit
             navigationItem.hidesSearchBarWhenScrolling = true
         }
     }
-   
+    
     public func getCountry (withRegionCode: String) {
         let counterySelectorPresenter = CountrySelectorPresenter()
         counterySelectorPresenter.attatchView(counterySelectorView:self)
@@ -60,7 +61,7 @@ import UIKit
     @IBAction func dismissAction(_ sender: Any) {
         self.dismiss(animated:true, completion: nil)
     }
-
+    
     func setupNavigationAndSearchBar() {
         if #available(iOS 11.0, *) {
             let searchController = UISearchController(searchResultsController: nil)
@@ -153,7 +154,7 @@ extension CounterySelectorSearchViewController:UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-      counterySelectorPresenter.loadCountries(searchText: searchText)
+        counterySelectorPresenter.loadCountries(searchText: searchText)
     }
 }
 

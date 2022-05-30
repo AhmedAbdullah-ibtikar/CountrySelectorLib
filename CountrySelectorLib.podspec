@@ -14,7 +14,7 @@ DESC
 
   s.ios.deployment_target = '11.4'
   s.source_files = 'CountrySelectorLib/**/*.{xib,swift}'
-  s.dependency 'https://github.com/iziz/libPhoneNumber-iOS'
+  s.dependency = :git => 'https://github.com/sh3at90/CountrySelectorLib.git'
  s.resources = 'CountrySelectorLib/**/*.{xcassets,png}'
 
 end

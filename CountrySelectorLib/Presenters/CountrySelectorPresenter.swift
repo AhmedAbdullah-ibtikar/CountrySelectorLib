@@ -19,16 +19,21 @@ class CountrySelectorPresenter: NSObject {
     }
     
     func loadCountries(searchText: String) {
-        var countries = [Country]()
-        for code in Locale.isoRegionCodes as [String] {
-            let country = loadCountry(regionCode: code)
-            if let country = country, (country.name.lowercased().contains(searchText.lowercased()) || searchText == "") {
-             countries.append(country)
+        DispatchQueue.global().async(execute: { [weak self] in
+            var countries = [Country]()
+            for code in Locale.isoRegionCodes as [String] {
+                let country = self?.loadCountry(regionCode: code)
+                if let country = country, (country.name.lowercased().contains(searchText.lowercased()) || searchText == "") {
+                    countries.append(country)
+                }
             }
-        }
-        countries = countries.sorted { $0.name < $1.name }
-        let dictionary = Dictionary(grouping: countries, by: { $0.name.first! })
-        self.counterySelectorView?.onSucessLoadingCountries(counteries: dictionary)
+            countries = countries.sorted { $0.name < $1.name }
+            let dictionary = Dictionary(grouping: countries, by: { $0.name.first! })
+            DispatchQueue.main.async { [weak self] in
+                self?.counterySelectorView?
+                    .onSucessLoadingCountries(counteries: dictionary)
+            }
+        })
     }
     
     func getCountry (withRegionCode: String) {
